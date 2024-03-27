@@ -50,6 +50,7 @@ export class BuscadorComponent {
   }
 
   limpiar() {
+    this.buscador = ""
     this.continentes.forEach(cont => cont.select = false);
   }
 }

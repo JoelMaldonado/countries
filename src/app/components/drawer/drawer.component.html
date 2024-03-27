@@ -5,16 +5,10 @@
     </span>
 
     @for (item of items; track $index) {
-    <a class="text-white rounded-md p-2 font-medium mt-3 hover:bg-white hover:text-gray-600 cursor-pointer"
-        [ngClass]="{'bg-white': tab == item}" (click)="select(item)">
-        <span [ngClass]="{'text-gray-600': tab == item.label}">
-            {{item.label}}
-        </span>
+    <a class="text-white rounded-md p-2 font-medium mt-3 hover:bg-sky-300 cursor-pointer"
+        [ngClass]="{'bg-sky-300': tab == item}" (click)="select(item)">
+        {{item.label}}
     </a>
     }
 
-</div>
-
-<div class="md:hidden">
-    Hola
 </div>

@@ -21,7 +21,6 @@ export class CountryService {
             name
             code
             continent {
-              code
               name
             }
         }
@@ -35,22 +34,17 @@ export class CountryService {
       query: gql`
       query{
         country(code: "${code}") {
-            awsRegion
             capital
             languages {
-              code
               name
             }
             code
-            currencies
             currency
-            emoji
-            emojiU
             name
-            native
-            phone
-            phones
             states {
+              name
+            }
+            continent {
               name
             }
         }
